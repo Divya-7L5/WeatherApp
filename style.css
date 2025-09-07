@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color:rgba(187, 190, 45, 0.5);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+
+h1, h2, h3 {
+  color:brown; 
+
+}
+.search-box {
+  margin: 20px 0;
+}
+
+
+.search-box input {
+  padding: 8px;
+  width: 200px;
+  border: 4px solid ;
+  border-radius: 4px 0 0 4px;
+
+}
+
+.search-box button {
+  padding: 8px 12px;
+  border: none;
+  background-color:rgb(6, 99, 46);
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.search-box button:hover{
+    background-color: blue;
+}
+.items-card {
+  width: 350px;
+  margin: 20px auto; /* Center the card */
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  
+}
+
+.items-card .date{
+  margin: 15px; 
+}
+
+.itmes-card .temp {
+  font-size: 30px;
+  margin: 10px ;
+}
+
+.items-card .icon {
+  font-size: 40px;
+  margin: 10px ;
+}
+
+.items-card .desc {
+  margin-bottom: 10px;
+}
+
+.items-card .extra p {
+  margin: 4px ;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background-color: white;
+  width: 180px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.forecast-card .icon {
+  font-size: 30px;
+  margin: 5px ;
+}
+
+
+footer {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+}
+
+
+/* Make layout responsive for other devices */
+body {
+  padding: 20px 10px;
+}
+
+.items-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 300px;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.forecast-card {
+  width: 100%;
+  max-width: 180px;
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .items-card, .forecast-card {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 20px;
+  } 
+}
+
+
